@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ds419.github.io/"/>
-  <updated>2016-07-20T16:39:44.957Z</updated>
+  <updated>2016-08-06T15:26:02.451Z</updated>
   <id>https://ds419.github.io/</id>
   
   <author>
@@ -16,26 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://ds419.github.io/2016/07/21/hello-world/"/>
-    <id>https://ds419.github.io/2016/07/21/hello-world/</id>
-    <published>2016-07-20T16:39:44.957Z</published>
-    <updated>2016-07-20T16:39:44.957Z</updated>
+    <title></title>
+    <link href="https://ds419.github.io/2016/08/06/%E7%AE%97%E6%9C%AF%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC/"/>
+    <id>https://ds419.github.io/2016/08/06/算术表达式求值/</id>
+    <published>2016-08-06T15:05:01.938Z</published>
+    <updated>2016-08-06T15:26:02.451Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<hr>
+<p>title: 算术表达式求值<br>date: 2016-08-06 23:21:45</p>
+<h2 id="tags-算法"><a href="#tags-算法" class="headerlink" title="tags: 算法"></a>tags: 算法</h2><h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
+<h3 id="算法描述："><a href="#算法描述：" class="headerlink" title="算法描述："></a>算法描述：</h3><p>双栈法：</p>
+<ol>
+<li>依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B</li>
+<li>碰到左括号‘(’忽略</li>
+<li>碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算，并将计算得到的操作数压入操作数栈A</li>
+<li>处理完最后一个右括号后，操作数栈A只有一个值，它就是最后计算结果</li>
+</ol>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><h5 id="data-evaluate文件内容："><a href="#data-evaluate文件内容：" class="headerlink" title="data/evaluate文件内容："></a>data/evaluate文件内容：</h5><p>( ( 1 + sqrt ( 5.0 ) ) / 2.0 )</p>
+<h5 id="java代码实现："><a href="#java代码实现：" class="headerlink" title="java代码实现："></a>java代码实现：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</div><div class="line">		System.setIn(<span class="keyword">new</span> FileInputStream(<span class="string">"data/evaluate"</span>));</div><div class="line">		Stack&lt;String&gt; ops = <span class="keyword">new</span> Stack&lt;String&gt;();</div><div class="line">		Stack&lt;Double&gt; vals = <span class="keyword">new</span> Stack&lt;Double&gt;();</div><div class="line">		<span class="keyword">while</span> (!StdIn.isEmpty()) &#123;</div><div class="line">			String s = StdIn.readString();</div><div class="line">			<span class="keyword">if</span> (s.equals(<span class="string">"("</span>));</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"+"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"-"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"*"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"/"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"sqrt"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">")"</span>)) &#123;</div><div class="line">				String op = ops.pop();</div><div class="line">				<span class="keyword">double</span> v = vals.pop();</div><div class="line">				<span class="keyword">if</span> (op.equals(<span class="string">"+"</span>))</div><div class="line">					v = vals.pop() + v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"-"</span>))</div><div class="line">					v = vals.pop() - v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"*"</span>))</div><div class="line">					v = vals.pop() * v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"/"</span>))</div><div class="line">					v = vals.pop() / v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"sqrt"</span>))</div><div class="line">					v = Math.sqrt(v);</div><div class="line">				vals.push(v);</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span> </div><div class="line">				vals.push(Double.parseDouble(s));</div><div class="line">		&#125;</div><div class="line">		StdOut.println(vals.pop());</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h5 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h5><p>准备的文件内容每个字符必须以空格隔开，否则它不会一个一个字符读取，会认为文件内容只是一个字符串。</p>
+<h3 id="运算结果："><a href="#运算结果：" class="headerlink" title="运算结果："></a>运算结果：</h3><p>1.618033988749895</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;hr&gt;
+&lt;p&gt;title: 算术表达式求值&lt;br&gt;date: 2016-08-06 23:21:45&lt;/p&gt;
+&lt;h2 id=&quot;tags-算法&quot;&gt;&lt;a href=&quot;#tags-算法&quot; class=&quot;headerlink&quot; title=&quot;tags: 算法&quot;&gt;&lt;/a&gt;tags: 算法
     
     </summary>
     

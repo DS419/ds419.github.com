@@ -84,19 +84,34 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
+tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+算法描述：双栈法：
+
+依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
+碰到左括号‘(’忽略
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://ds419.github.io/2016/07/21/hello-world/index.html">
+<meta property="og:title" content="Wonderland_ds">
+<meta property="og:url" content="https://ds419.github.io/2016/08/06/算术表达式求值/index.html">
 <meta property="og:site_name" content="Wonderland_ds">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-07-20T16:39:44.957Z">
+<meta property="og:description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
+tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+算法描述：双栈法：
+
+依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
+碰到左括号‘(’忽略
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
+<meta property="og:updated_time" content="2016-08-06T15:26:02.451Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Wonderland_ds">
+<meta name="twitter:description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
+tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+算法描述：双栈法：
+
+依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
+碰到左括号‘(’忽略
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
 
 
 
@@ -117,9 +132,9 @@ Quick">
 
 
 
-  <link rel="canonical" href="https://ds419.github.io/2016/07/21/hello-world/"/>
+  <link rel="canonical" href="https://ds419.github.io/2016/08/06/算术表达式求值/"/>
 
-  <title> Hello World | Wonderland_ds </title>
+  <title>  | Wonderland_ds </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -249,7 +264,7 @@ Quick">
             
             
               
-                Hello World
+                
               
             
           </h1>
@@ -261,8 +276,8 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-21T00:39:44+08:00" content="2016-07-21">
-              2016-07-21
+            <time itemprop="dateCreated" datetime="2016-08-06T23:05:01+08:00" content="2016-08-06">
+              2016-08-06
             </time>
           </span>
 
@@ -272,8 +287,8 @@ Quick">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/21/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/21/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/08/06/算术表达式求值/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/06/算术表达式求值/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -302,15 +317,20 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <hr>
+<p>title: 算术表达式求值<br>date: 2016-08-06 23:21:45</p>
+<h2 id="tags-算法"><a href="#tags-算法" class="headerlink" title="tags: 算法"></a>tags: 算法</h2><h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
+<h3 id="算法描述："><a href="#算法描述：" class="headerlink" title="算法描述："></a>算法描述：</h3><p>双栈法：</p>
+<ol>
+<li>依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B</li>
+<li>碰到左括号‘(’忽略</li>
+<li>碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算，并将计算得到的操作数压入操作数栈A</li>
+<li>处理完最后一个右括号后，操作数栈A只有一个值，它就是最后计算结果</li>
+</ol>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><h5 id="data-evaluate文件内容："><a href="#data-evaluate文件内容：" class="headerlink" title="data/evaluate文件内容："></a>data/evaluate文件内容：</h5><p>( ( 1 + sqrt ( 5.0 ) ) / 2.0 )</p>
+<h5 id="java代码实现："><a href="#java代码实现：" class="headerlink" title="java代码实现："></a>java代码实现：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</div><div class="line">		System.setIn(<span class="keyword">new</span> FileInputStream(<span class="string">"data/evaluate"</span>));</div><div class="line">		Stack&lt;String&gt; ops = <span class="keyword">new</span> Stack&lt;String&gt;();</div><div class="line">		Stack&lt;Double&gt; vals = <span class="keyword">new</span> Stack&lt;Double&gt;();</div><div class="line">		<span class="keyword">while</span> (!StdIn.isEmpty()) &#123;</div><div class="line">			String s = StdIn.readString();</div><div class="line">			<span class="keyword">if</span> (s.equals(<span class="string">"("</span>));</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"+"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"-"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"*"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"/"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">"sqrt"</span>))</div><div class="line">				ops.push(s);</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (s.equals(<span class="string">")"</span>)) &#123;</div><div class="line">				String op = ops.pop();</div><div class="line">				<span class="keyword">double</span> v = vals.pop();</div><div class="line">				<span class="keyword">if</span> (op.equals(<span class="string">"+"</span>))</div><div class="line">					v = vals.pop() + v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"-"</span>))</div><div class="line">					v = vals.pop() - v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"*"</span>))</div><div class="line">					v = vals.pop() * v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"/"</span>))</div><div class="line">					v = vals.pop() / v;</div><div class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (op.equals(<span class="string">"sqrt"</span>))</div><div class="line">					v = Math.sqrt(v);</div><div class="line">				vals.push(v);</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span> </div><div class="line">				vals.push(Double.parseDouble(s));</div><div class="line">		&#125;</div><div class="line">		StdOut.println(vals.pop());</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h5 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h5><p>准备的文件内容每个字符必须以空格隔开，否则它不会一个一个字符读取，会认为文件内容只是一个字符串。</p>
+<h3 id="运算结果："><a href="#运算结果：" class="headerlink" title="运算结果："></a>运算结果：</h3><p>1.618033988749895</p>
 
       
     </div>
@@ -354,8 +374,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/21/hello-world/"
-           data-title="Hello World" data-url="https://ds419.github.io/2016/07/21/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/08/06/算术表达式求值/"
+           data-title="" data-url="https://ds419.github.io/2016/08/06/算术表达式求值/">
       </div>
     
   </div>
@@ -461,7 +481,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-算法"><span class="nav-number">1.</span> <span class="nav-text">tags: 算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述-："><span class="nav-number">1.1.</span> <span class="nav-text">问题描述 ：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法描述："><span class="nav-number">1.2.</span> <span class="nav-text">算法描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现："><span class="nav-number">1.3.</span> <span class="nav-text">代码实现：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#data-evaluate文件内容："><span class="nav-number">1.3.0.1.</span> <span class="nav-text">data/evaluate文件内容：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#java代码实现："><span class="nav-number">1.3.0.2.</span> <span class="nav-text">java代码实现：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意："><span class="nav-number">1.3.0.3.</span> <span class="nav-text">注意：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算结果："><span class="nav-number">1.4.</span> <span class="nav-text">运算结果：</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
