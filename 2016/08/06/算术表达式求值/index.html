@@ -84,34 +84,34 @@
 
 
 
-<meta name="description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
-tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+<meta name="description" content="问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
 算法描述：双栈法：
 
 依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
 碰到左括号‘(’忽略
-碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算，并将计算得到的操作数压入操作数栈A
+处理完最后一个右括号后，操作数栈A只有一个值，它就是最后计算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wonderland_ds">
+<meta property="og:title" content="算术表达式求值">
 <meta property="og:url" content="https://ds419.github.io/2016/08/06/算术表达式求值/index.html">
 <meta property="og:site_name" content="Wonderland_ds">
-<meta property="og:description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
-tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+<meta property="og:description" content="问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
 算法描述：双栈法：
 
 依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
 碰到左括号‘(’忽略
-碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
-<meta property="og:updated_time" content="2016-08-06T15:26:02.451Z">
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算，并将计算得到的操作数压入操作数栈A
+处理完最后一个右括号后，操作数栈A只有一个值，它就是最后计算">
+<meta property="og:updated_time" content="2016-08-06T15:29:03.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wonderland_ds">
-<meta name="twitter:description" content="title: 算术表达式求值date: 2016-08-06 23:21:45
-tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
+<meta name="twitter:title" content="算术表达式求值">
+<meta name="twitter:description" content="问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )的值
 算法描述：双栈法：
 
 依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B
 碰到左括号‘(’忽略
-碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算">
+碰到右括号‘)’，从运算符栈B弹出一个运算符，从操作数栈A弹出所需数量的操作数，进行计算，并将计算得到的操作数压入操作数栈A
+处理完最后一个右括号后，操作数栈A只有一个值，它就是最后计算">
 
 
 
@@ -134,7 +134,7 @@ tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )
 
   <link rel="canonical" href="https://ds419.github.io/2016/08/06/算术表达式求值/"/>
 
-  <title>  | Wonderland_ds </title>
+  <title> 算术表达式求值 | Wonderland_ds </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -264,7 +264,7 @@ tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )
             
             
               
-                
+                算术表达式求值
               
             
           </h1>
@@ -317,9 +317,7 @@ tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )
       
 
       
-        <hr>
-<p>title: 算术表达式求值<br>date: 2016-08-06 23:21:45</p>
-<h2 id="tags-算法"><a href="#tags-算法" class="headerlink" title="tags: 算法"></a>tags: 算法</h2><h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
+        <h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
 <h3 id="算法描述："><a href="#算法描述：" class="headerlink" title="算法描述："></a>算法描述：</h3><p>双栈法：</p>
 <ol>
 <li>依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B</li>
@@ -375,7 +373,7 @@ tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/08/06/算术表达式求值/"
-           data-title="" data-url="https://ds419.github.io/2016/08/06/算术表达式求值/">
+           data-title="算术表达式求值" data-url="https://ds419.github.io/2016/08/06/算术表达式求值/">
       </div>
     
   </div>
@@ -481,7 +479,7 @@ tags: 算法问题描述 ：计算算术表达式( 1 + ( ( 2 + 3 )  ( 4  5 ) ) )
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-算法"><span class="nav-number">1.</span> <span class="nav-text">tags: 算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述-："><span class="nav-number">1.1.</span> <span class="nav-text">问题描述 ：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法描述："><span class="nav-number">1.2.</span> <span class="nav-text">算法描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现："><span class="nav-number">1.3.</span> <span class="nav-text">代码实现：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#data-evaluate文件内容："><span class="nav-number">1.3.0.1.</span> <span class="nav-text">data/evaluate文件内容：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#java代码实现："><span class="nav-number">1.3.0.2.</span> <span class="nav-text">java代码实现：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意："><span class="nav-number">1.3.0.3.</span> <span class="nav-text">注意：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算结果："><span class="nav-number">1.4.</span> <span class="nav-text">运算结果：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述-："><span class="nav-number">1.</span> <span class="nav-text">问题描述 ：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法描述："><span class="nav-number">2.</span> <span class="nav-text">算法描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现："><span class="nav-number">3.</span> <span class="nav-text">代码实现：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#data-evaluate文件内容："><span class="nav-number">3.0.1.</span> <span class="nav-text">data/evaluate文件内容：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#java代码实现："><span class="nav-number">3.0.2.</span> <span class="nav-text">java代码实现：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意："><span class="nav-number">3.0.3.</span> <span class="nav-text">注意：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算结果："><span class="nav-number">4.</span> <span class="nav-text">运算结果：</span></a></li></ol></div>
             
           </div>
         </section>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ds419.github.io/"/>
-  <updated>2016-08-06T15:26:02.451Z</updated>
+  <updated>2016-08-06T15:29:03.757Z</updated>
   <id>https://ds419.github.io/</id>
   
   <author>
@@ -16,15 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>算术表达式求值</title>
     <link href="https://ds419.github.io/2016/08/06/%E7%AE%97%E6%9C%AF%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC/"/>
     <id>https://ds419.github.io/2016/08/06/算术表达式求值/</id>
     <published>2016-08-06T15:05:01.938Z</published>
-    <updated>2016-08-06T15:26:02.451Z</updated>
+    <updated>2016-08-06T15:29:03.757Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<p>title: 算术表达式求值<br>date: 2016-08-06 23:21:45</p>
-<h2 id="tags-算法"><a href="#tags-算法" class="headerlink" title="tags: 算法"></a>tags: 算法</h2><h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
+    <content type="html"><![CDATA[<h3 id="问题描述-："><a href="#问题描述-：" class="headerlink" title="问题描述 ："></a>问题描述 ：</h3><p>计算算术表达式( 1 + ( ( 2 + 3 ) <em> ( 4 </em> 5 ) ) )的值</p>
 <h3 id="算法描述："><a href="#算法描述：" class="headerlink" title="算法描述："></a>算法描述：</h3><p>双栈法：</p>
 <ol>
 <li>依次读入算术表达式的字符，碰到数字压入操作数栈A，碰到运算符压入运算符栈B</li>
@@ -40,9 +38,8 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: 算术表达式求值&lt;br&gt;date: 2016-08-06 23:21:45&lt;/p&gt;
-&lt;h2 id=&quot;tags-算法&quot;&gt;&lt;a href=&quot;#tags-算法&quot; class=&quot;headerlink&quot; title=&quot;tags: 算法&quot;&gt;&lt;/a&gt;tags: 算法
+      &lt;h3 id=&quot;问题描述-：&quot;&gt;&lt;a href=&quot;#问题描述-：&quot; class=&quot;headerlink&quot; title=&quot;问题描述 ：&quot;&gt;&lt;/a&gt;问题描述 ：&lt;/h3&gt;&lt;p&gt;计算算术表达式( 1 + ( ( 2 + 3 ) &lt;em&gt; ( 4 &lt;/em&gt; 5 ) ) )的值&lt;/p&gt;
+
     
     </summary>
     
